@@ -19,26 +19,18 @@ body div {
 }
 body div h1 {
   margin: 10px;
+  text-align: center;
   color: green;
   -webkit-text-decoration: underline blue 2px;
           text-decoration: underline blue 2px;
 }
 body div section {
-  width: 100%;
-}
-body div section:first-of-type {
   display: flex;
   align-items: stretch;
   flex-direction: row;
   justify-content: center;
   row-gap: 10px;
-}
-body div section:last-of-type {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 10px;
+  width: 100%;
 }
 body div section article {
   display: flex;
@@ -48,14 +40,35 @@ body div section article {
   row-gap: 10px;
   width: 100%;
   text-align: center;
-  border: solid 2px green;
+}
+body div section article:nth-child(odd) {
+  color: blue;
+  border-width: 2px;
+  border-style: solid;
+  border-color: green;
+  font-size: 1rem;
+}
+body div section article:nth-child(even) {
+  color: red;
+  border-width: 2px;
+  border-style: solid;
+  border-color: green;
+  font-size: 1rem;
 }
 body div section article p {
   padding: 20px;
 }
-body div section article:nth-child(odd) {
-  color: blue;
+body div section:last-of-type {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
 }
-body div section article:nth-child(even) {
-  color: red;
+body div section:last-of-type article {
+  color: green;
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

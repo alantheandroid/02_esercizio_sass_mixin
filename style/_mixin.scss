@@ -1,0 +1,17 @@
+@mixin flexContainer($align-items, $flex-direction) {
+  display: flex;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+@mixin articleStyling($color, $border-color, $font-size: 1rem) {
+  color: $color;
+  border: {
+    width: 2px;
+    style: solid;
+    color: $border-color;
+  }
+  font-size: $font-size;
+}
